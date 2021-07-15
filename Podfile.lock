@@ -1,6 +1,6 @@
 PODS:
-  - LoginServiceKit (2.1.0)
-  - Sparkle (1.22.0)
+  - LoginServiceKit (2.2.1)
+  - Sparkle (1.26.0)
 
 DEPENDENCIES:
   - LoginServiceKit (from `https://github.com/Clipy/LoginServiceKit.git`)
@@ -16,12 +16,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   LoginServiceKit:
-    :commit: 01b162248760b5fed4c7bffebee37eb92351b41b
+    :commit: e35be754ca2409ceada3825ac80461ecbad3c11f
     :git: https://github.com/Clipy/LoginServiceKit.git
 
 SPEC CHECKSUMS:
-  LoginServiceKit: 9a8b258c3111fa0d9585615052f778b08be92302
-  Sparkle: 593ac2e677c07bcb6c3b22d621240e7cbedaab57
+  LoginServiceKit: e39022a6ea6169b3716fc3c43e89b2e7fd12f222
+  Sparkle: d56d028f4b0c123577825f5d1004f6140d77f90e
 
 PODFILE CHECKSUM: a066e8fc8a7c237fdbad87db44a4fe7c2e721e2d
 
