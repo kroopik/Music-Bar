@@ -7,6 +7,16 @@
 		<language>en</language>
 		
 		<item>
+			<title>Version 1.5</title>
+			<sparkle:releaseNotesLink>
+				https://musa11971.github.io/Music-Bar/release-notes/1.5
+			</sparkle:releaseNotesLink>
+			<pubDate>Thu, 15 Jul 2021 12:16:00 +0100</pubDate>
+			<sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
+			<enclosure url="https://github.com/musa11971/Music-Bar/releases/download/v1.5/Music.Bar.zip" sparkle:version="1.5" type="application/octet-stream" sparkle:edSignature="UqprdnYPAqttSOOwMxOcxAZmHH09bYGLpZ5mjLmMUZeKLMpBjWxWaq3aO14WDHaLYw+8WFIvX8x2UpaJCysFCg==" length="8003333" />
+		</item>
+
+		<item>
 			<title>Version 1.4</title>
 			<sparkle:releaseNotesLink>
 				https://musa11971.github.io/Music-Bar/release-notes/1.4
