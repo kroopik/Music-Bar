@@ -29,11 +29,6 @@
 "appearance_option_dark" = "Donker";
 "appearance_option_auto" = "Auto";
 
-"artwork_quality" = "Afbeeldingskwaliteit:";
-"artwork_quality_option_high" = "Hoog";
-"artwork_quality_option_normal" = "Normaal (standaard)";
-"artwork_quality_option_low" = "Laag";
-
 "menu_bar_popover_gap" = "Ruimte tussen menubalk en pop-up tonen";
 
 "show_menu_bar_icon" = "Menubalk icoon tonen";

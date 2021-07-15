@@ -70,9 +70,6 @@ class MusicApp {
 	}
 	
 	var artworkColor: NSColor?
-	
-	private var artworkAPITask: URLSessionTask?
-	private var artworkDownloadTask: URLSessionTask?
     
     // MARK: - Initializers
     private init() {}
@@ -134,76 +131,26 @@ class MusicApp {
         }
     }
 	
-	// Retrieves the artwork of the current track from Apple
+	// Retrieves the artwork of the current track
 	fileprivate func updateArtwork(forTrack track: Track?) {
 		// Post ArtworkWillChange notification
 		NotificationCenter.post(name: .ArtworkWillChange)
 		
 		if track == nil {
-			print("Artwork is empty")
 			self.artwork = PlayerViewController.defaultAlbumCover
 			return
 		}
 		
-		// Reset artwork color
-		self.artworkColor = nil
-		
-		// Destroy tasks, if any was already busy
-		if let previousAPITask = artworkAPITask {
-			previousAPITask.cancel()
-		}
-		
-		if let previousDownloadTask = artworkDownloadTask {
-			previousDownloadTask.cancel()
-		}
-		
-		// Start fetching artwork
-		artworkAPITask = URLSession.fetchJSON(fromURL: URL(string: "https://itunes.apple.com/search?term=\(track!.searchTerm)&entity=song&limit=1")!) { (data, json, error) in
-			if error != nil {
-				print("Could not get artwork")
-				self.artwork = PlayerViewController.defaultAlbumCover
-				return
-			}
-
-			if let json = json as? [String: Any] {
-				if let results = json["results"] as? [[String: Any]] {
-					if results.count >= 1, var imgURL = results[0]["artworkUrl100"] as? String {
-						// Get the correct quality URL
-						switch UserPreferences.artworkQuality {
-							case .low:
-								imgURL = imgURL.replacingOccurrences(of: "100x100", with: "200x200")
-							case .normal:
-								imgURL = imgURL.replacingOccurrences(of: "100x100", with: "300x300")
-							case .high:
-								imgURL = imgURL.replacingOccurrences(of: "100x100", with: "500x500")
-						}
-						
-						// Create the URL
-						let url = URL(string: imgURL)!
-						
-						// Download the artwork
-						self.artworkDownloadTask = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
-							
-							if error != nil {
-								self.artwork = nil
-								return
-							}
-
-							DispatchQueue.main.async {
-								// Set the artwork to the image
-								self.artwork = NSImage(data: data!)
-							}
-						})
-							
-						self.artworkDownloadTask!.resume()
-					}
-					else {
-						self.artwork = nil
-					}
+		// Retrieve artwork from Apple Music
+		DispatchQueue.main.async {
+			NSAppleScript.run(code: NSAppleScript.snippets.GetCurrentArtwork.rawValue) { (success, output, errors) in
+				if success {
+					self.artwork = NSImage(data: output!.data)
+				}
+				else {
+					self.artwork = PlayerViewController.defaultAlbumCover
 				}
 			}
 		}
-		
-		artworkAPITask!.resume()
 	}
 }

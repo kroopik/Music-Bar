@@ -88,7 +88,7 @@ extension NSAppleScript {
 		case GetCurrentArtwork = """
 		tell application "Music"
 			if it is running then
-				get artwork 1 of current track
+				get raw data of artwork 1 of current track
 			end if
 		end tell
 		"""

@@ -29,11 +29,6 @@
 "appearance_option_dark" = "Dunkel";
 "appearance_option_auto" = "Auto";
 
-"artwork_quality" = "Bildqualität:";
-"artwork_quality_option_high" = "Hoch";
-"artwork_quality_option_normal" = "Normal (Standard)";
-"artwork_quality_option_low" = "Gering";
-
 "menu_bar_popover_gap" = "Platz zwischen Menüleiste und Popup";
 
 "show_menu_bar_icon" = "Menüleistensymbol anzeigen";

@@ -1059,11 +1059,11 @@
             <objects>
                 <viewController title="Display" id="PUY-4D-cqK" customClass="DisplayPreferenceViewController" customModule="Music_Bar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="izB-JV-KWp">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="390"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="293"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z3F-a2-vQY">
-                                <rect key="frame" x="-2" y="321" width="144" height="16"/>
+                                <rect key="frame" x="-2" y="224" width="144" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="Vxw-Xo-mK8"/>
                                 </constraints>
@@ -1077,7 +1077,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FMl-Qu-0lm">
-                                <rect key="frame" x="172" y="300" width="39" height="16"/>
+                                <rect key="frame" x="172" y="203" width="39" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Light" id="aiJ-uA-8jV">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1088,7 +1088,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bJU-Km-aw2">
-                                <rect key="frame" x="269" y="300" width="37" height="16"/>
+                                <rect key="frame" x="269" y="203" width="37" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Dark" id="0Nd-qt-ofV">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1099,7 +1099,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="czB-vC-iq1" userLabel="Light Mode Button">
-                                <rect key="frame" x="148" y="321" width="86" height="59"/>
+                                <rect key="frame" x="148" y="224" width="86" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="5Lk-co-w6B"/>
                                     <constraint firstAttribute="width" constant="86" id="ts7-Pl-WPT"/>
@@ -1113,7 +1113,7 @@
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="nQG-cb-hRi" userLabel="Dark Mode Button">
-                                <rect key="frame" x="244" y="321" width="86" height="59"/>
+                                <rect key="frame" x="244" y="224" width="86" height="59"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="preview-app-dark" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="HWT-aE-0dr">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1123,7 +1123,7 @@
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="opI-L3-Xb9" userLabel="Dark Mode Button">
-                                <rect key="frame" x="340" y="321" width="86" height="59"/>
+                                <rect key="frame" x="340" y="224" width="86" height="59"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="preview-app-dark-light" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="TbK-D4-uqv">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1132,67 +1132,11 @@
                                     <action selector="automaticDarkLightModeButtonPressed:" target="PUY-4D-cqK" id="8e8-FK-BcR"/>
                                 </connections>
                             </button>
-                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="MxB-Kf-cJr">
-                                <rect key="frame" x="19" y="282" width="411" height="5"/>
-                            </box>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8c9-Mu-eev">
-                                <rect key="frame" x="-2" y="253" width="148" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="bcv-vU-Zbg"/>
-                                </constraints>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Artwork quality:" id="xbj-16-hw1">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="artwork_quality"/>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="e9h-Qb-Frk">
-                                <rect key="frame" x="146" y="252" width="304" height="18"/>
-                                <buttonCell key="cell" type="radio" title="High" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="c5b-A3-dIh">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="artwork_quality_option_high"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="artworkQualityRadioChecked:" target="PUY-4D-cqK" id="hzL-rd-mBb"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="iEi-kg-GmW">
-                                <rect key="frame" x="146" y="231" width="304" height="18"/>
-                                <buttonCell key="cell" type="radio" title="Normal (default)" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="MvI-hD-9Hc">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="artwork_quality_option_normal"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="artworkQualityRadioChecked:" target="PUY-4D-cqK" id="ZY5-DQ-w2W"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="fYM-iQ-d1s">
-                                <rect key="frame" x="146" y="210" width="304" height="18"/>
-                                <buttonCell key="cell" type="radio" title="Low" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="u3v-DG-817">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="artwork_quality_option_low"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="artworkQualityRadioChecked:" target="PUY-4D-cqK" id="DHC-4N-nk4"/>
-                                </connections>
-                            </button>
-                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Mb9-so-Nle">
-                                <rect key="frame" x="19" y="193" width="411" height="5"/>
+                            <box horizontalHuggingPriority="248" verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Mb9-so-Nle">
+                                <rect key="frame" x="19" y="185" width="411" height="5"/>
                             </box>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dva-CD-hsq">
-                                <rect key="frame" x="146" y="163" width="295" height="18"/>
+                                <rect key="frame" x="146" y="155" width="295" height="18"/>
                                 <buttonCell key="cell" type="check" title="Leave a gap between Menu Bar and popover" bezelStyle="regularSquare" imagePosition="left" lineBreakMode="truncatingTail" state="on" inset="2" id="31m-wY-yyo">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1205,7 +1149,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5hq-8a-S8A">
-                                <rect key="frame" x="146" y="137" width="295" height="18"/>
+                                <rect key="frame" x="146" y="129" width="295" height="18"/>
                                 <buttonCell key="cell" type="check" title="Show Menu Bar Icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="KXb-9u-uC6">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1218,10 +1162,10 @@
                                 </connections>
                             </button>
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="cVL-7Q-v7T">
-                                <rect key="frame" x="19" y="120" width="411" height="5"/>
+                                <rect key="frame" x="19" y="112" width="411" height="5"/>
                             </box>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PKH-Ql-8uz">
-                                <rect key="frame" x="-2" y="91" width="148" height="16"/>
+                                <rect key="frame" x="-2" y="83" width="148" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="wjB-L6-DTw"/>
                                 </constraints>
@@ -1235,7 +1179,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UXk-0U-rab">
-                                <rect key="frame" x="146" y="90" width="304" height="18"/>
+                                <rect key="frame" x="146" y="82" width="304" height="18"/>
                                 <buttonCell key="cell" type="radio" title="Nirvana - Smells Like Teen Spirit" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="1M7-Qo-HDk">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1248,7 +1192,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="xAu-ig-QW3">
-                                <rect key="frame" x="146" y="69" width="304" height="18"/>
+                                <rect key="frame" x="146" y="61" width="304" height="18"/>
                                 <buttonCell key="cell" type="radio" title="Nirvana" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="mVq-vH-jSj">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1261,7 +1205,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="crC-D2-gvQ">
-                                <rect key="frame" x="146" y="48" width="304" height="18"/>
+                                <rect key="frame" x="146" y="40" width="304" height="18"/>
                                 <buttonCell key="cell" type="radio" title="Smells Like Teen Spirit" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="0U3-s6-TUl">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1274,7 +1218,7 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="u3x-uU-5J8">
-                                <rect key="frame" x="365" y="300" width="37" height="16"/>
+                                <rect key="frame" x="365" y="203" width="37" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Auto" id="6cr-Xz-mGC">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1285,7 +1229,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="nnG-wl-MZa" userLabel="Hide track Button">
-                                <rect key="frame" x="146" y="27" width="304" height="18"/>
+                                <rect key="frame" x="146" y="19" width="304" height="18"/>
                                 <buttonCell key="cell" type="radio" title="Hide track" bezelStyle="regularSquare" imagePosition="left" alignment="left" tag="3" inset="2" id="ZyL-xa-TUg">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1299,65 +1243,49 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="e9h-Qb-Frk" secondAttribute="trailing" id="3Lx-l6-da1"/>
                             <constraint firstItem="czB-vC-iq1" firstAttribute="centerX" secondItem="FMl-Qu-0lm" secondAttribute="centerX" id="3qz-n4-lXB"/>
                             <constraint firstItem="crC-D2-gvQ" firstAttribute="top" secondItem="xAu-ig-QW3" secondAttribute="bottom" constant="5" id="5a0-qu-jWN"/>
-                            <constraint firstItem="PKH-Ql-8uz" firstAttribute="trailing" secondItem="8c9-Mu-eev" secondAttribute="trailing" id="7Qs-l0-8E5"/>
                             <constraint firstItem="FMl-Qu-0lm" firstAttribute="top" secondItem="czB-vC-iq1" secondAttribute="bottom" constant="5" id="7uB-PG-Ict"/>
                             <constraint firstItem="5hq-8a-S8A" firstAttribute="leading" secondItem="Dva-CD-hsq" secondAttribute="leading" id="8DQ-cz-zAE"/>
                             <constraint firstItem="nQG-cb-hRi" firstAttribute="bottom" secondItem="czB-vC-iq1" secondAttribute="bottom" id="8eW-7K-vDv"/>
-                            <constraint firstAttribute="trailing" secondItem="iEi-kg-GmW" secondAttribute="trailing" id="8oB-pv-qal"/>
                             <constraint firstItem="PKH-Ql-8uz" firstAttribute="leading" secondItem="izB-JV-KWp" secondAttribute="leading" id="A0I-7R-ONJ"/>
                             <constraint firstAttribute="trailing" secondItem="xAu-ig-QW3" secondAttribute="trailing" id="A17-8T-dwX"/>
                             <constraint firstAttribute="trailing" secondItem="nnG-wl-MZa" secondAttribute="trailing" id="BGI-yL-5xN"/>
-                            <constraint firstAttribute="trailing" secondItem="fYM-iQ-d1s" secondAttribute="trailing" id="C8o-ZK-3r3"/>
                             <constraint firstItem="xAu-ig-QW3" firstAttribute="top" secondItem="UXk-0U-rab" secondAttribute="bottom" constant="5" id="D5r-Kw-n38"/>
                             <constraint firstItem="crC-D2-gvQ" firstAttribute="leading" secondItem="xAu-ig-QW3" secondAttribute="leading" id="FLX-bD-8wa"/>
                             <constraint firstItem="opI-L3-Xb9" firstAttribute="bottom" secondItem="nQG-cb-hRi" secondAttribute="bottom" id="GFv-00-gEx"/>
-                            <constraint firstItem="iEi-kg-GmW" firstAttribute="top" secondItem="e9h-Qb-Frk" secondAttribute="bottom" constant="5" id="HUx-YG-Cjw"/>
                             <constraint firstItem="z3F-a2-vQY" firstAttribute="bottom" secondItem="czB-vC-iq1" secondAttribute="bottom" id="HxX-ob-yy2"/>
+                            <constraint firstItem="cVL-7Q-v7T" firstAttribute="leading" secondItem="izB-JV-KWp" secondAttribute="leading" constant="19" id="IDe-N9-Itt"/>
                             <constraint firstItem="opI-L3-Xb9" firstAttribute="leading" secondItem="nQG-cb-hRi" secondAttribute="trailing" constant="10" id="JQc-1I-ela"/>
                             <constraint firstItem="PKH-Ql-8uz" firstAttribute="centerY" secondItem="UXk-0U-rab" secondAttribute="centerY" id="LI0-Mi-zVn"/>
                             <constraint firstItem="u3x-uU-5J8" firstAttribute="centerX" secondItem="opI-L3-Xb9" secondAttribute="centerX" id="MNj-MU-odt"/>
                             <constraint firstItem="nnG-wl-MZa" firstAttribute="top" secondItem="crC-D2-gvQ" secondAttribute="bottom" constant="5" id="OuX-dD-bBo"/>
                             <constraint firstItem="Dva-CD-hsq" firstAttribute="top" secondItem="Mb9-so-Nle" secondAttribute="bottom" constant="15" id="SXM-Ui-uXb"/>
                             <constraint firstItem="u3x-uU-5J8" firstAttribute="top" secondItem="opI-L3-Xb9" secondAttribute="bottom" constant="5" id="Tl6-PE-DYG"/>
-                            <constraint firstItem="Mb9-so-Nle" firstAttribute="leading" secondItem="MxB-Kf-cJr" secondAttribute="leading" id="UBZ-ic-uaW"/>
                             <constraint firstItem="nnG-wl-MZa" firstAttribute="leading" secondItem="crC-D2-gvQ" secondAttribute="leading" id="UDv-YI-v8k"/>
                             <constraint firstItem="cVL-7Q-v7T" firstAttribute="top" secondItem="5hq-8a-S8A" secondAttribute="bottom" constant="15" id="V5T-5Q-265"/>
                             <constraint firstItem="cVL-7Q-v7T" firstAttribute="leading" secondItem="Mb9-so-Nle" secondAttribute="leading" id="Vjq-74-MeU"/>
                             <constraint firstItem="xAu-ig-QW3" firstAttribute="leading" secondItem="UXk-0U-rab" secondAttribute="leading" id="WDU-Xu-KFk"/>
                             <constraint firstItem="czB-vC-iq1" firstAttribute="leading" secondItem="z3F-a2-vQY" secondAttribute="trailing" constant="8" id="WKb-R5-ZaV"/>
                             <constraint firstAttribute="trailing" secondItem="crC-D2-gvQ" secondAttribute="trailing" id="WYa-gN-p0e"/>
-                            <constraint firstItem="8c9-Mu-eev" firstAttribute="centerY" secondItem="e9h-Qb-Frk" secondAttribute="centerY" id="XtR-n3-8b8"/>
-                            <constraint firstItem="e9h-Qb-Frk" firstAttribute="top" secondItem="MxB-Kf-cJr" secondAttribute="bottom" constant="15" id="Y4a-aJ-ZqS"/>
                             <constraint firstItem="bJU-Km-aw2" firstAttribute="top" secondItem="nQG-cb-hRi" secondAttribute="bottom" constant="5" id="Y7q-Zl-kR4"/>
                             <constraint firstItem="UXk-0U-rab" firstAttribute="top" secondItem="cVL-7Q-v7T" secondAttribute="bottom" constant="15" id="Yjl-lF-rit"/>
-                            <constraint firstItem="MxB-Kf-cJr" firstAttribute="top" secondItem="FMl-Qu-0lm" secondAttribute="bottom" constant="15" id="Yn4-fa-hSs"/>
                             <constraint firstAttribute="trailing" secondItem="UXk-0U-rab" secondAttribute="trailing" id="Yt0-Gt-7KW"/>
                             <constraint firstItem="cVL-7Q-v7T" firstAttribute="trailing" secondItem="Mb9-so-Nle" secondAttribute="trailing" id="Yz5-0C-GHY"/>
                             <constraint firstItem="5hq-8a-S8A" firstAttribute="top" secondItem="Dva-CD-hsq" secondAttribute="bottom" constant="10" id="c0z-A6-zhX"/>
                             <constraint firstItem="czB-vC-iq1" firstAttribute="leading" secondItem="Dva-CD-hsq" secondAttribute="leading" id="fP5-Ej-5ti"/>
-                            <constraint firstItem="MxB-Kf-cJr" firstAttribute="leading" secondItem="izB-JV-KWp" secondAttribute="leading" constant="19" id="hb8-E5-8fy"/>
+                            <constraint firstItem="Mb9-so-Nle" firstAttribute="top" secondItem="bJU-Km-aw2" secondAttribute="bottom" constant="15" id="gdb-vh-XMV"/>
                             <constraint firstItem="opI-L3-Xb9" firstAttribute="height" secondItem="czB-vC-iq1" secondAttribute="height" id="jKb-be-6WG"/>
-                            <constraint firstItem="iEi-kg-GmW" firstAttribute="leading" secondItem="e9h-Qb-Frk" secondAttribute="leading" id="juM-ep-Lk7"/>
-                            <constraint firstItem="8c9-Mu-eev" firstAttribute="leading" secondItem="izB-JV-KWp" secondAttribute="leading" id="m5l-jy-QjS"/>
-                            <constraint firstItem="fYM-iQ-d1s" firstAttribute="leading" secondItem="iEi-kg-GmW" secondAttribute="leading" id="oq5-s5-dfW"/>
-                            <constraint firstItem="fYM-iQ-d1s" firstAttribute="top" secondItem="iEi-kg-GmW" secondAttribute="bottom" constant="5" id="pRy-pc-qsh"/>
+                            <constraint firstAttribute="trailing" secondItem="cVL-7Q-v7T" secondAttribute="trailing" constant="20" symbolic="YES" id="onp-oe-RbQ"/>
                             <constraint firstItem="nQG-cb-hRi" firstAttribute="leading" secondItem="czB-vC-iq1" secondAttribute="trailing" constant="10" id="qyN-eS-DiA"/>
                             <constraint firstItem="nQG-cb-hRi" firstAttribute="height" secondItem="czB-vC-iq1" secondAttribute="height" id="r4z-vf-fYM"/>
                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Dva-CD-hsq" secondAttribute="trailing" constant="250" id="sLf-nf-X2e"/>
                             <constraint firstItem="czB-vC-iq1" firstAttribute="top" secondItem="izB-JV-KWp" secondAttribute="top" constant="10" id="tRV-au-iTU"/>
                             <constraint firstItem="z3F-a2-vQY" firstAttribute="leading" secondItem="izB-JV-KWp" secondAttribute="leading" id="tmm-2n-wpr"/>
                             <constraint firstItem="nQG-cb-hRi" firstAttribute="width" secondItem="czB-vC-iq1" secondAttribute="width" id="ub3-pC-pMK"/>
-                            <constraint firstItem="Mb9-so-Nle" firstAttribute="top" secondItem="fYM-iQ-d1s" secondAttribute="bottom" constant="15" id="vKZ-Dw-DhG"/>
-                            <constraint firstItem="czB-vC-iq1" firstAttribute="leading" secondItem="e9h-Qb-Frk" secondAttribute="leading" id="w8O-7H-lYx"/>
                             <constraint firstItem="opI-L3-Xb9" firstAttribute="width" secondItem="czB-vC-iq1" secondAttribute="width" id="wa2-B3-MXB"/>
                             <constraint firstItem="UXk-0U-rab" firstAttribute="leading" secondItem="czB-vC-iq1" secondAttribute="leading" id="xVi-ff-OTA"/>
                             <constraint firstItem="nQG-cb-hRi" firstAttribute="centerX" secondItem="bJU-Km-aw2" secondAttribute="centerX" id="xWh-Ef-E0y"/>
-                            <constraint firstItem="Mb9-so-Nle" firstAttribute="trailing" secondItem="MxB-Kf-cJr" secondAttribute="trailing" id="xmF-sY-mX1"/>
-                            <constraint firstItem="8c9-Mu-eev" firstAttribute="leading" secondItem="z3F-a2-vQY" secondAttribute="leading" id="yDV-3R-J2O"/>
-                            <constraint firstAttribute="trailing" secondItem="MxB-Kf-cJr" secondAttribute="trailing" constant="20" id="yU1-GI-d4G"/>
                             <constraint firstItem="5hq-8a-S8A" firstAttribute="trailing" secondItem="Dva-CD-hsq" secondAttribute="trailing" id="zUO-cW-kDx"/>
                         </constraints>
                     </view>
@@ -1367,9 +1295,6 @@
                     <connections>
                         <outlet property="artistAndTitleButton" destination="UXk-0U-rab" id="zje-6b-UxQ"/>
                         <outlet property="artistOnlyButton" destination="xAu-ig-QW3" id="dqS-Zj-8ar"/>
-                        <outlet property="artworkQualityHighButton" destination="e9h-Qb-Frk" id="xV1-iu-uCJ"/>
-                        <outlet property="artworkQualityLowButton" destination="fYM-iQ-d1s" id="0IY-iD-cyO"/>
-                        <outlet property="artworkQualityNormalButton" destination="iEi-kg-GmW" id="Vtv-Rk-aPU"/>
                         <outlet property="hideTrackButton" destination="nnG-wl-MZa" id="sIf-N9-Gcv"/>
                         <outlet property="showMenuBarIconButton" destination="5hq-8a-S8A" id="Nuc-C9-BA6"/>
                         <outlet property="titleOnlyButton" destination="crC-D2-gvQ" id="ilQ-lU-r3j"/>
@@ -1378,7 +1303,7 @@
                 </viewController>
                 <customObject id="2xB-bk-LaH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="1172"/>
+            <point key="canvasLocation" x="758" y="1123.5"/>
         </scene>
         <!--Player View Controller-->
         <scene sceneID="hIz-AP-VOD">
