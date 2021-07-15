@@ -12,7 +12,6 @@ class UserPreferences {
 	// MARK: - Enums
 	private enum Keys: String {
 		case appearance
-		case artworkQuality
 		case startAppAtLogin
 		case showGap
 		case trackFormatting
@@ -21,10 +20,6 @@ class UserPreferences {
 	
 	enum AppearanceMode: String {
 		case light, dark, auto
-	}
-	
-	enum ArtworkQualityMode: String {
-		case low, normal, high
 	}
 	
 	enum TrackFormattingMode: String {
@@ -40,17 +35,6 @@ class UserPreferences {
         }
         set {
 			self.write(value: newValue.rawValue, toKey: self.Keys.appearance.rawValue)
-        }
-    }
-	
-	class var artworkQuality: ArtworkQualityMode {
-        get {
-			return self.ArtworkQualityMode.init(rawValue:
-				self.readString(fromKey: self.Keys.artworkQuality.rawValue) ?? ""
-				) ?? self.ArtworkQualityMode.normal
-        }
-        set {
-			self.write(value: newValue.rawValue, toKey: self.Keys.artworkQuality.rawValue)
         }
     }
 	

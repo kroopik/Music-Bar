@@ -29,11 +29,6 @@
 "appearance_option_dark" = "Dark";
 "appearance_option_auto" = "Auto";
 
-"artwork_quality" = "Artwork quality:";
-"artwork_quality_option_high" = "High";
-"artwork_quality_option_normal" = "Normal (default)";
-"artwork_quality_option_low" = "Low";
-
 "menu_bar_popover_gap" = "Leave a gap between Menu Bar and popover";
 
 "show_menu_bar_icon" = "Show Menu Bar Icon";

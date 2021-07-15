@@ -11,10 +11,6 @@ import AppKit
 class DisplayPreferenceViewController: PreferencesViewController {
 	
 	// MARK: - IBOutlets
-	@IBOutlet weak var artworkQualityHighButton: NSButton!
-	@IBOutlet weak var artworkQualityNormalButton: NSButton!
-	@IBOutlet weak var artworkQualityLowButton: NSButton!
-	
 	@IBOutlet weak var useGapButton: NSButton!
 	@IBOutlet weak var showMenuBarIconButton: NSButton!
 	
@@ -26,16 +22,6 @@ class DisplayPreferenceViewController: PreferencesViewController {
 	// MARK: - View
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		// Select the correct artwork quality
-		switch(UserPreferences.artworkQuality) {
-			case .low:
-				artworkQualityLowButton.state = .on
-			case .normal:
-				artworkQualityNormalButton.state = .on
-			case .high:
-				artworkQualityHighButton.state = .on
-		}
 		
 		// Select the correct track formatting
 		switch(UserPreferences.trackFormatting) {
@@ -73,19 +59,6 @@ class DisplayPreferenceViewController: PreferencesViewController {
 	@IBAction func automaticDarkLightModeButtonPressed(_ sender: Any) {
 		UserPreferences.appearance = .auto
 		NSApp.appearance = nil
-	}
-	
-	@IBAction func artworkQualityRadioChecked(_ sender: Any) {
-		if let radio = sender as? NSButton {
-			switch radio.tag {
-				case 1:
-					UserPreferences.artworkQuality = .high
-				case 2:
-					UserPreferences.artworkQuality = .normal
-				default:
-					UserPreferences.artworkQuality = .low
-			}
-		}
 	}
 	
 	@IBAction func useGapButtonPressed(_ sender: Any) {
