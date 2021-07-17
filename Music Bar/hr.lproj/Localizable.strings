@@ -1,0 +1,58 @@
+/**********************************************/
+/*		Preference tab labels
+/**********************************************/
+"preference_tab_info" = "Info";
+"preference_tab_general" = "Opće";
+"preference_tab_display" = "Prikaz";
+"preference_tab_support" = "Podrška";
+"preference_tab_feedback" = "Povratne informacije";
+
+/**********************************************/
+/*		Preferences: Information tab
+/**********************************************/
+"check_updates" = "Traži nove verzije";
+"quit_app" = "Zatvori program";
+"goodbye_wave" = "Doviđenja 👋";
+"info_version" = "Verzija {v}";
+"info_credit_notice" = "Music Bar za macOS, autori: Musse Semou i Khoren Katklian. Sva prava pridržana.";
+
+/**********************************************/
+/*		Preferences: General tab
+/**********************************************/
+"launch_at_login" = "Pokreni program nakon prijave";
+
+/**********************************************/
+/*		Preferences: Appearance tab
+/**********************************************/
+"appearance" = "Izgled:";
+"appearance_option_light" = "Svjetli";
+"appearance_option_dark" = "Tamni";
+"appearance_option_auto" = "Automatski";
+
+"artwork_quality" = "Kvaliteta slika:";
+"artwork_quality_option_high" = "Visoka";
+"artwork_quality_option_normal" = "Normalna (standardno)";
+"artwork_quality_option_low" = "Niska";
+
+"menu_bar_popover_gap" = "Ostavi razmak između trake izbornika i skočnog prozora";
+
+"show_menu_bar_icon" = "Prikaži ikonu u traci izbornika";
+
+"track_formatting" = "Prikaz naslova:";
+"track_formatting_option_artist_and_title" = "Haustor - Moja prva ljubav";
+"track_formatting_option_artist_only" = "Haustor";
+"track_formatting_option_title_only" = "Moja prva ljubav";
+"track_formatting_option_hide" = "Sakrij pjesmu";
+
+/**********************************************/
+/*		Preferences: Support tab
+/**********************************************/
+"support_info" = "Ja sam redovni student softverskog inženjerstva i u slobodno vrijeme bavim se Music Barom. Ako voliš koristiti Music Bar, doniraj! Svaka donacija pomaže. 💜";
+
+/**********************************************/
+/*		Preferences: Feedback tab
+/**********************************************/
+"github_issue_info" = "Imaš prijedlog za Music Bar ili želiš prijaviti problem? Prijavi problem na GitHub repozitoriju.";
+"open_github" = "Otvori GitHub repozitorij";
+"twitter_contact_info" = "Održavatelja programa Music Bar možeš pronaći i na Twitteru.";
+"open_twitter" = "Pogledaj @musa11971 na Twitteru";
