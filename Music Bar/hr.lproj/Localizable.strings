@@ -29,11 +29,6 @@
 "appearance_option_dark" = "Tamni";
 "appearance_option_auto" = "Automatski";
 
-"artwork_quality" = "Kvaliteta slika:";
-"artwork_quality_option_high" = "Visoka";
-"artwork_quality_option_normal" = "Normalna (standardno)";
-"artwork_quality_option_low" = "Niska";
-
 "menu_bar_popover_gap" = "Ostavi razmak između trake izbornika i skočnog prozora";
 
 "show_menu_bar_icon" = "Prikaži ikonu u traci izbornika";
