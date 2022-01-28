@@ -1,0 +1,53 @@
+/**********************************************/
+/*		Preference tab labels
+/**********************************************/
+"preference_tab_info" = "Bilgi";
+"preference_tab_general" = "Genel";
+"preference_tab_display" = "Ekran";
+"preference_tab_support" = "Destek";
+"preference_tab_feedback" = "Geri Bildirim";
+
+/**********************************************/
+/*		Preferences: Information tab
+/**********************************************/
+"check_updates" = "Güncellemeleri kontrol et";
+"quit_app" = "Uygulamadan çık";
+"goodbye_wave" = "Gülegüle 👋";
+"info_version" = "Versiyon {v}";
+"info_credit_notice" = "Music Bar macOS, Musse Semou & Khoren Katklian. Bütün hakları saklıdır.";
+
+/**********************************************/
+/*		Preferences: General tab
+/**********************************************/
+"launch_at_login" = "Oturum açmayla beraber başlat";
+
+/**********************************************/
+/*		Preferences: Appearance tab
+/**********************************************/
+"appearance" = "Görünüm:";
+"appearance_option_light" = "Açık";
+"appearance_option_dark" = "Koyu";
+"appearance_option_auto" = "Oto";
+
+"menu_bar_popover_gap" = "Menü Bar ile popover arasında boşluk bırak";
+
+"show_menu_bar_icon" = "Menü Bar Simgesini Göster";
+
+"track_formatting" = "Parça formatı:";
+"track_formatting_option_artist_and_title" = "Abdurrahman Önül - Döndüm Mevlana Gibi";
+"track_formatting_option_artist_only" = "Abdurrahman Önül";
+"track_formatting_option_title_only" = "Döndüm Mevlana Gibi";
+"track_formatting_option_hide" = "Parçayı gizle";
+
+/**********************************************/
+/*		Preferences: Support tab
+/**********************************************/
+"support_info" = "Tam zamanlı bir yazılım mühendisliği öğrencisiyim ve Music Bar'ı boş zamanımda geliştiriyorum. Eğer Music Bar hoşunuza gidiyorsa lütfen bağış yapmayı aklınızda bulundurun! Her bir kuruş benim için anlamlı 💜";
+
+/**********************************************/
+/*		Preferences: Feedback tab
+/**********************************************/
+"github_issue_info" = "Herhangi bir öneriniz mi var ya da bir sorunu mu paylaşacaksınız? Lütfen GitHub deposu üzerinden "issue" açın.";
+"open_github" = "GitHub deposunu aç";
+"twitter_contact_info" = "Alternatif olarak, Twitter üzerinden geliştiriciye ulaşabilirsiniz.";
+"open_twitter" = "@musa11971 Twitter hesabına bak";
