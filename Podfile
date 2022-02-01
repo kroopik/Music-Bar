@@ -5,6 +5,8 @@ target 'Music Bar' do
   use_frameworks!
 
   # Pods for Music Bar
-  pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit.git'
+	# Temporarily using "https://github.com/Sunnyyoung/LoginServiceKit.git"
+	# Original repo is "https://github.com/Clipy/LoginServiceKit.git"
+  pod 'LoginServiceKit', :git => 'https://github.com/Sunnyyoung/LoginServiceKit.git'
   pod 'Sparkle'
 end
