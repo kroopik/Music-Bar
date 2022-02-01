@@ -30,6 +30,7 @@ class PlayerViewController: NSViewController {
 	// MARK: - View
 	override func viewWillAppear() {
 		super.viewWillAppear()
+		controlsOverlay.isHidden = true
 
 		// Update initial view data
 		if let track = MusicApp.shared.currentTrack {
